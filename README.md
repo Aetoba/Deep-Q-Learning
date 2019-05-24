@@ -4,11 +4,13 @@ Hadrien Pouget
 
 This is the code I wrote for my 4th year Project, on implementing Deep Q-Learning as in the 2013 DeepMind NIPS Paper.
 
-While is was capabable of improving on Breakout:
+## Breakout
+
+It is learned to play Breakout:
 
 ![BrktPrf](/src/data/not_runs/brktperformance.png)
 
-###### Each orange point is the average performance over the last 100 episodes with 0.05 exploration rate. Green is max performance. Blue is average human performance. The algorithm was trained for 5000 episodes.
+###### Each orange point is the average performance over the last 100 training episodes with 0.05 exploration rate. Green is max performance. Blue is average human performance. The algorithm was trained for 5000 episodes.
 
 Playing Breakout randomly yields a very low average score (roughly 1.2):
 
@@ -21,6 +23,8 @@ Our agent does much better than this:
 
 ###### Left: gif of trained agent playing Breakout. Right: What agent 'sees' after preprocessing of image
 
+## Space Invaders
+
 It failed to achieve similar results in Space Invaders, struggling to perform better than random:
 ![SpInvPrf](/src/data/not_runs/spinvperformance.png)
 ![SpInvPrf2](/src/data/not_runs/spinv2performance.png)
@@ -29,6 +33,7 @@ It failed to achieve similar results in Space Invaders, struggling to perform be
 
 The report contains further analysis of the results and possible issues.
 
+## Running the code
 
 To run the code, use `python train.py` from in './src/' and type `python train.py -h` for help. The scripts in './data/utils/' can be used to plot performance after training.
 
