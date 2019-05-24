@@ -6,7 +6,7 @@ This is the code I wrote for my 4th year Project, on implementing Deep Q-Learnin
 
 ## Breakout
 
-It is learned to play Breakout:
+It learned to play Breakout:
 
 ![BrktPrf](/src/data/not_runs/brktperformance.png)
 
