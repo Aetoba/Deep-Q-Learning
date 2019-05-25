@@ -49,7 +49,7 @@ In the frozen_lake branch I implemented a simpler version of the algorith to pla
 
 The goal is to get from the top left to the bottom right of the lake without falling into holes:
 
-![FrozenLake](./src/data/not_runs/frozenlake.png)
+![FrozenLake](./src/data/not_runs/frolake.png)
 
 It succeeds in doing so:
 
