@@ -40,3 +40,23 @@ To run the code, use `python train.py` from in './src/' and type `python train.p
 To run an agent that has already been trained on Breakout, run `python run_trained_brkt.py`.
 
 The code was written with functionality in mind, and so could use some cleaning up!
+
+Specifically, this is the code for solving deterministic Frozen Lake.
+
+## Frozen Lake
+
+In the frozen_lake branch I implemented a simpler version of the algorith to play a deterministic version of Frozen Lake. `git checkout frozen_lake` to access it.
+
+The goal is to get from the top left to the bottom right of the lake without falling into holes:
+
+![FrozenLake](./src/data/not_runs/frolake.png)
+
+It succeeds in doing so:
+
+![FrozenLakePerf](./src/data/not_runs/fro_lake_results.png)
+
+With some failure left because of the episolon term, causing it to randomly step into a hole.
+
+### Running the code
+
+For help running the code, type `python train.py -h` from inside /src/.
