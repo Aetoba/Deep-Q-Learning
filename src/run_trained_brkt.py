@@ -13,7 +13,7 @@ sess = tf.Session()
 Q = Q_cnn(0.00025, 4)
 env = gym.make('BreakoutDeterministic-v4')
 saver = tf.train.Saver()
-saver.restore(sess, './data/run_brkt3/model.ckpt')
+saver.restore(sess, './data/run_brkt/model.ckpt')
 
 
 exploit = Exploit(sess, Q, env, 4, 4500)
