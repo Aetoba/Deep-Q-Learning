@@ -5,9 +5,7 @@ from utils.exploit_learning import Exploit
 from model.qnetwork import Q_cnn
 
 
-print("Type anything and press enter to save frames, otherwise just press enter")
-capture = input() != ""
-
+capture = False
 
 sess = tf.Session()
 Q = Q_cnn(0.00025, 4)
